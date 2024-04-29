@@ -45,7 +45,7 @@ void insertAtEnd(struct node* head, int data)
     
     //upon reaching the last node we update, suggested last node'
     //previous pointer to current last nodes previous node.
-    tmp->prev = head->prev;
+    tmp->prev = head;
     
     //also we now point the current last node's next to suggested 
     //last node.
@@ -69,7 +69,7 @@ void insertAfterNode(struct node* head, int data, int afterData)
     
     //upon reaching the last node we update, suggested last node'
     //previous pointer to current last nodes previous node.
-    tmp->prev = head->prev;
+    tmp->prev = head;
     tmp->next = head->next;
     
     //also we now point the current last node's next to suggested 
